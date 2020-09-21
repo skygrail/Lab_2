@@ -319,24 +319,24 @@ namespace Lab_2
             string fStr = "bye";
             (int, int, int, char) fTuple = mixFunc(fArr, fStr);
 
-            Console.WriteLine($"{fTuple.Item1}, {fTuple.Item2},{fTuple.Item3}, {fTuple.Item4}");
+            Console.WriteLine($"MAX: {fTuple.Item1}, MIN: {fTuple.Item2}, SUM: {fTuple.Item3}, LETTER: {fTuple.Item4}");
 
             Console.WriteLine();
 
-            long checkFunc() //Ошибка
+            int checkFunc() //Ошибка  при увеличении заднного значения
             {
                 checked
                 {
-                    long maxLong = 9223372036854775807;
+                    int maxLong = 2147483647;
                     return maxLong;
                 }
             }
 
-            long uncheckFunc()
+            int uncheckFunc()
             {
                 unchecked
                 {
-                    long maxUnLong = 9223372036854775807;
+                    int maxUnLong = 2147483647;
                     return maxUnLong;
                 }
             }
